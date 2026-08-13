@@ -1,0 +1,11 @@
+<svg width="1212" height="269" viewBox="0 0 1212 269" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="gs3d_bottom_grad" x1="0" y1="0" x2="1212" y2="269" gradientUnits="userSpaceOnUse">
+<stop stop-color="#18C8E8"/>
+<stop offset="1" stop-color="#0A8AA8"/>
+</linearGradient>
+</defs>
+<rect x="0" y="0" width="1212" height="269" fill="url(#gs3d_bottom_grad)"/>
+<text x="606" y="165" text-anchor="middle" font-family="Oswald, Arial, sans-serif" font-size="150" font-weight="700" fill="#FFFFFF" letter-spacing="8">GS3D</text>
+<text x="606" y="235" text-anchor="middle" font-family="Manrope, Arial, sans-serif" font-size="42" font-weight="400" fill="#E6F9FD" letter-spacing="24">PRINTING</text>
+</svg>
