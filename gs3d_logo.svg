@@ -6,7 +6,7 @@
   </defs>
   <!-- GS3D line -->
   <text x="450" y="150" text-anchor="middle" font-family="Oswald, 'Arial Black', Arial, sans-serif" font-size="150" font-weight="700" letter-spacing="6" fill="#505050">
-    GS<tspan fill="#18C8E8">3D</tspan>
+    GS<tspan fill="#10C0E0">3D</tspan>
   </text>
   <!-- PRINTING line -->
   <text x="450" y="262" text-anchor="middle" font-family="Oswald, 'Arial Black', Arial, sans-serif" font-size="68" font-weight="500" letter-spacing="22" fill="#505050">

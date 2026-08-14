@@ -1326,7 +1326,7 @@ textarea {
 }
 
 /*.head_social svg:hover path , .ft_social svg:hover path {*/
-/*  fill: #18C8E8;*/
+/*  fill: #10C0E0;*/
 /*}*/
 
 .head_social .tooltip,
@@ -2271,7 +2271,7 @@ textarea {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: #18C8E8;
+    background: #10C0E0;
     color: #fff;
     transition: background 0.3s ease;
 }

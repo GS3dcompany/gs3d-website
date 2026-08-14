@@ -432,7 +432,7 @@
     .tech_des {padding: 20px 20px;}
     .slick-next{right:0;z-index: 9;}
     .slick-prev{left:0;z-index: 9;}
-    .slick-next:before, .slick-prev:before{color:#18C8E8;}
+    .slick-next:before, .slick-prev:before{color:#10C0E0;}
     #header{padding:8px 0;}
     .process-count{
         padding: 15px 21px;
