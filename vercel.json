@@ -1,5 +1,8 @@
 {
   "rewrites": [
+    { "source": "/verify-captcha", "destination": "/api/verify-captcha" },
+    { "source": "/store-home-form", "destination": "/api/store-home-form" },
+    { "source": "/whatsaapinquiry", "destination": "/api/whatsaapinquiry" },
     { "source": "/(.*)", "destination": "/index.html" }
   ],
   "headers": [

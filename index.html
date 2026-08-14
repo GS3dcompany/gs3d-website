@@ -76,9 +76,9 @@
 
 
 
-    <link rel="stylesheet" href="css/style.css?v=6">
+    <link rel="stylesheet" href="css/style.css?v=7">
 
-    <link rel="stylesheet" href="css/responsive.css?v=6">
+    <link rel="stylesheet" href="css/responsive.css?v=7">
 
 
 
@@ -11414,7 +11414,7 @@ document.addEventListener('DOMContentLoaded', function () {
             submitButton.dataset.originalText =
                 submitButton.innerHTML;
 
-            submitButton.innerHTML = 'Verifying captcha...';
+            submitButton.innerHTML = 'Opening email app...';
 
 
             /*
@@ -11423,123 +11423,31 @@ document.addEventListener('DOMContentLoaded', function () {
             |--------------------------------------------------------------------------
             */
 
-            $.ajax({
-
-                url: 'https://gs3dprinting.com/verify-captcha',
-
-                type: 'POST',
-
-                data: {
-
-                    _token: 'R4wGBRRkg326YCfzeeMK622b2UI0MPutX3cFvOcA',
-
-                    custom_captcha:
-                        captchaInput
-                            ? captchaInput.value.trim()
-                            : ''
-
-                },
-
-
-                /*
-                |--------------------------------------------------------------------------
-                | CAPTCHA Success
-                |--------------------------------------------------------------------------
-                */
-
-                success: function (response) {
-
-                    if (response.success) {
-
-                        submitButton.innerHTML =
-                            'Submitting...';
-
-                        submitButton.disabled = true;
-
-
                         /*
-                        |--------------------------------------------------------------------------
-                        | Submit THIS specific form
-                        |--------------------------------------------------------------------------
-                        |
-                        | Do not use:
-                        |
-                        | document.getElementById(...)
-                        |
-                        | We submit the exact form associated with
-                        | the button that was clicked.
-                        |
-                        */
+            |--------------------------------------------------------------------------
+            | Option 1: mailto — open visitor's email client pre-filled
+            |--------------------------------------------------------------------------
+            */
 
-                        HTMLFormElement.prototype.submit.call(form);
+            const mailSubject = encodeURIComponent(
+                'Website enquiry from ' + fullname.value.trim()
+            );
 
-                    } else {
+            const mailBody = encodeURIComponent(
+                'Name: ' + fullname.value.trim() + '\n' +
+                'Company: ' + companyName.value.trim() + '\n' +
+                'Email: ' + email.value.trim() + '\n' +
+                'Contact: ' + contact.value.trim() + '\n' +
+                'Service: ' + (services.value || 'Not specified') + '\n\n' +
+                'Sent from gs3dprinting.com'
+            );
 
-                        /*
-                        |--------------------------------------------------------------------------
-                        | CAPTCHA Failed
-                        |--------------------------------------------------------------------------
-                        */
+            window.location.href =
+                'mailto:info@gs3dprinting.com?subject=' +
+                mailSubject +
+                '&body=' +
+                mailBody;
 
-                        if (captchaImage) {
-
-                            captchaImage.src =
-                                'images/captcha.png?' +
-                                Date.now();
-
-                        }
-
-                        if (captchaInput) {
-                            captchaInput.value = '';
-                        }
-
-                        if (captchaError) {
-
-                            captchaError.style.display = 'block';
-
-                            captchaError.textContent =
-                                response.message ||
-                                'Captcha verification failed.';
-                        }
-
-                        submitButton.innerHTML =
-                            submitButton.dataset.originalText ||
-                            'Submit Now';
-
-                        submitButton.disabled = false;
-                    }
-                },
-
-
-                /*
-                |--------------------------------------------------------------------------
-                | AJAX Error
-                |--------------------------------------------------------------------------
-                */
-
-                error: function (xhr) {
-
-                    console.error(
-                        'Captcha verification error:',
-                        xhr
-                    );
-
-                    if (captchaError) {
-
-                        captchaError.style.display = 'block';
-
-                        captchaError.textContent =
-                            'Unable to verify captcha. Please try again.';
-                    }
-
-                    submitButton.innerHTML =
-                        submitButton.dataset.originalText ||
-                        'Submit Now';
-
-                    submitButton.disabled = false;
-                }
-
-            });
 
         });
 
@@ -12308,7 +12216,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Lock button
 
-        submitButton.textContent = 'Verifying captcha...';
+        submitButton.textContent = 'Opening email app...';
 
         submitButton.disabled = true;
 
@@ -12316,59 +12224,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Verify captcha via AJAX
 
-        $.ajax({
+                // Option 1: send the enquiry via the visitor's email client (mailto).
+        // Works immediately with no backend; the mail app opens pre-filled.
+        // ponytail: captcha stays client-side (decorative static image).
 
-            url: 'https://gs3dprinting.com/verify-captcha',
+        const mailSubject = encodeURIComponent('Website enquiry from ' + firstName.value.trim());
 
-            type: 'POST',
+        const mailBody = encodeURIComponent(
+            'Name: ' + firstName.value.trim() + '\n' +
+            'Company: ' + companyName.value.trim() + '\n' +
+            'Email: ' + email.value.trim() + '\n' +
+            'Contact: ' + contact.value.trim() + '\n\n' +
+            'Sent from gs3dprinting.com'
+        );
 
-            data: {
+        window.location.href = 'mailto:info@gs3dprinting.com?subject=' + mailSubject + '&body=' + mailBody;
 
-                _token: 'R4wGBRRkg326YCfzeeMK622b2UI0MPutX3cFvOcA',
-
-                custom_captcha: captchaInput.value.trim()
-
-            },
-
-            success: function (response) {
-
-                if (response.success) {
-
-                    submitButton.textContent = 'Submitting...';
-
-                    submitButton.disabled = true;
-
-                    form.submit();
-
-                } else {
-
-                    captchaImage.src = 'images/captcha.png?' + Date.now();
-
-                    captchaError.style.display = 'block';
-
-                    captchaError.textContent = response.message;
-
-                    submitButton.textContent = 'Submit Now';
-
-                    submitButton.disabled = false;
-
-                }
-
-            },
-
-            error: function () {
-
-                            console.log('Something went wrong. Please try again.');
-
-
-
-                submitButton.textContent = 'Submit Now';
-
-                submitButton.disabled = false;
-
-            }
-
-        });
 
     });
 
