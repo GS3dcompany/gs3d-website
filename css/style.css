@@ -69,7 +69,7 @@ a {
     width: fit-content;
     color: #fff;
     border-radius: 5px;
-    background: linear-gradient(0deg, #c32e2d -0.02%, #ddab28 99.98%), #c22523;
+    background: linear-gradient(0deg, #c32e2d -0.02%, #F0BC11 99.98%), #c22523;
     padding: 15px 20px;
     transition: all 0.3s ease;
     border: none;
@@ -95,7 +95,7 @@ a {
 }
 
 .btn_1:hover {
-    background: linear-gradient(0deg, #c32e2d -0.02%, #ddab28 99.98%), #c22523;
+    background: linear-gradient(0deg, #c32e2d -0.02%, #F0BC11 99.98%), #c22523;
     border:none;
     color: #fff;
     transition: all 0.3s ease;
@@ -270,7 +270,7 @@ a {
 }
 
 .menu_btn:hover {
-    background: linear-gradient(0deg, #c32e2d -0.02%, #ddab28 99.98%), #c22523;
+    background: linear-gradient(0deg, #c32e2d -0.02%, #F0BC11 99.98%), #c22523;
     border:none;
     color: white;
 }
@@ -883,7 +883,7 @@ height:56vh;
     position: absolute;
     inset: 0;
     border-radius: 10px;
-    background: linear-gradient(0deg, #c32e2d -0.02%, #ddab28 99.98%), #c22523;
+    background: linear-gradient(0deg, #c32e2d -0.02%, #F0BC11 99.98%), #c22523;
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
@@ -932,7 +932,7 @@ height:56vh;
     width: 30px;
     height: 8px;
     border-radius: 10px;
-    background: linear-gradient(90deg, #c32e2d 0%, #ddab28 100%), #c22523;
+    background: linear-gradient(90deg, #c32e2d 0%, #F0BC11 100%), #c22523;
     transform: translateX(-6px);
     transition: all 0.3s ease;
 }
@@ -1172,7 +1172,7 @@ height:56vh;
 .featured-project-overlay h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #ddab28;
+    color: #F0BC11;
     font-weight: 400;
 }
 
@@ -1469,7 +1469,7 @@ textarea {
 /*.ft_social a:nth-child(4):hover,*/
 /*.head_social .instagram:hover,*/
 /*.ft_social .instagram:hover {*/
-/*    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);*/
+/*    background: linear-gradient(45deg, #c32e2d 0%, #F0BC11 100%);*/
 /*    color: #fff;*/
 /*}*/
 
@@ -1477,7 +1477,7 @@ textarea {
 .ft_social a:nth-child(4):hover .tooltip,
 .head_social .instagram:hover .tooltip,
 .ft_social .instagram:hover .tooltip {
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #c32e2d 0%, #F0BC11 100%);
     color: #fff;
 }
 
@@ -1485,7 +1485,7 @@ textarea {
 .ft_social a:nth-child(4):hover .tooltip::before,
 .head_social .instagram:hover .tooltip::before,
 .ft_social .instagram:hover .tooltip::before {
-    background: #e4405f;
+    background: #c32e2d;
 }
 
 .head_social a:nth-child(4):hover svg,
@@ -1603,7 +1603,7 @@ textarea {
             color: #fff;
         }
 
-        background: linear-gradient(0deg, #c32e2d -0.02%, #ddab28 99.98%), #c22523;
+        background: linear-gradient(0deg, #c32e2d -0.02%, #F0BC11 99.98%), #c22523;
         transition: all 0.5s ease;
     }
 }
@@ -1960,7 +1960,7 @@ textarea {
     width: fit-content;
     color: #fff;
     border-radius: 5px;
-    background: linear-gradient(0deg, #c32e2d -0.02%, #ddab28 99.98%), #c22523;
+    background: linear-gradient(0deg, #c32e2d -0.02%, #F0BC11 99.98%), #c22523;
     padding: 15px 20px;
     transition: all 0.3s ease;
     border: none;
@@ -2211,7 +2211,7 @@ textarea {
 
 
  .blog-content a{
-        color:#ca522b;
+        color:#AE2525;
         font-weight:600;
     }
     .blog-content li{
@@ -2277,7 +2277,7 @@ textarea {
 }
 
 .header_call_btn:hover {
-    background: #CE632B;
+    background: #AE2525;
     color: #fff;
 }
 
@@ -2331,7 +2331,7 @@ textarea {
 }
 
 .testi_stars {
-    color: #F27A22;
+    color: #F0BC11;
     font-size: 24px;
     display: flex;
     gap: 2px;
@@ -2368,7 +2368,7 @@ textarea {
 .process-count {
     font-size: 22px!important;
     font-weight: 700;
-    background: linear-gradient(0deg, #c32e2d -0.02%, #ddab28 99.98%), #c22523;
+    background: linear-gradient(0deg, #c32e2d -0.02%, #F0BC11 99.98%), #c22523;
     color: white;
     padding: 5px;
     border-radius: 99px;

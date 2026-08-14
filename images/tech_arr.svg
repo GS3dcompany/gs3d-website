@@ -7,11 +7,11 @@
 <defs>
 <linearGradient id="paint0_linear_1_5113" x1="0.00147629" y1="30.0111" x2="59.9985" y2="30.0111" gradientUnits="userSpaceOnUse">
 <stop stop-color="#C32E2D"/>
-<stop offset="1" stop-color="#DDAB28"/>
+<stop offset="1" stop-color="#F0BC11"/>
 </linearGradient>
 <linearGradient id="paint1_linear_1_5113" x1="0.00147629" y1="30.0111" x2="59.9985" y2="30.0111" gradientUnits="userSpaceOnUse">
 <stop stop-color="#C32E2D"/>
-<stop offset="1" stop-color="#DDAB28"/>
+<stop offset="1" stop-color="#F0BC11"/>
 </linearGradient>
 </defs>
 </svg>
