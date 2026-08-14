@@ -6,6 +6,11 @@ const SUPABASE_URL = process.env.SUPABASE_URL;
 const SUPABASE_SECRET_KEY = process.env.SUPABASE_SECRET_KEY;
 
 function parseBody(req) {
+  // @vercel/node pre-parses form-urlencoded bodies into an object in some
+  // runtimes and leaves them as a raw string in others; handle both.
+  if (req.body && typeof req.body === 'object' && !Array.isArray(req.body)) {
+    return req.body;
+  }
   const raw = typeof req.body === 'string' ? req.body : '';
   const params = new URLSearchParams(raw);
   const data = {};
