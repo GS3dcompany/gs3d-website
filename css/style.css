@@ -7,13 +7,13 @@
 :root {
     --333-black: #333;
     --111-black: #111;
-    --ae2-red: #AE2525;
+    --ae2-red: #10C0E0;
     --999-gray: #999;
     --bbb-gray: #BBB;
     --ddd-gray: #ddd;
     --eee-gray: #EEE;
-    --fob-yellow: #F0BC11;
-    --005-blue: #18C8E8;
+    --fob-yellow: #10C0E0;
+    --005-blue: #10C0E0;
 }
 
 body {
@@ -69,7 +69,7 @@ a {
     width: fit-content;
     color: #fff;
     border-radius: 5px;
-    background: linear-gradient(0deg, #c32e2d -0.02%, #8f1f1e 99.98%), #c22523;
+    background: linear-gradient(0deg, #10C0E0 -0.02%, #0B8FAD 99.98%), #0B8FAD;
     padding: 15px 20px;
     transition: all 0.3s ease;
     border: none;
@@ -95,7 +95,7 @@ a {
 }
 
 .btn_1:hover {
-    background: linear-gradient(0deg, #c32e2d -0.02%, #8f1f1e 99.98%), #c22523;
+    background: linear-gradient(0deg, #10C0E0 -0.02%, #0B8FAD 99.98%), #0B8FAD;
     border:none;
     color: #fff;
     transition: all 0.3s ease;
@@ -270,7 +270,7 @@ a {
 }
 
 .menu_btn:hover {
-    background: linear-gradient(0deg, #c32e2d -0.02%, #8f1f1e 99.98%), #c22523;
+    background: linear-gradient(0deg, #10C0E0 -0.02%, #0B8FAD 99.98%), #0B8FAD;
     border:none;
     color: white;
 }
@@ -668,7 +668,7 @@ height:56vh;
     padding: 50px;
     border-radius: 10px;
     z-index: 10;
-    background: linear-gradient(0deg, rgb(195, 46, 45) -0.02%, rgb(143, 31, 30) 99.98%), rgb(194, 37, 35);
+    background: linear-gradient(0deg, rgb(16, 192, 224) -0.02%, rgb(11, 143, 173) 99.98%), rgb(11, 143, 173);
 }
 
 .comp_bus_front {
@@ -883,7 +883,7 @@ height:56vh;
     position: absolute;
     inset: 0;
     border-radius: 10px;
-    background: linear-gradient(0deg, #c32e2d -0.02%, #8f1f1e 99.98%), #c22523;
+    background: linear-gradient(0deg, #10C0E0 -0.02%, #0B8FAD 99.98%), #0B8FAD;
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
@@ -932,7 +932,7 @@ height:56vh;
     width: 30px;
     height: 8px;
     border-radius: 10px;
-    background: linear-gradient(90deg, #c32e2d 0%, #8f1f1e 100%), #c22523;
+    background: linear-gradient(90deg, #10C0E0 0%, #0B8FAD 100%), #0B8FAD;
     transform: translateX(-6px);
     transition: all 0.3s ease;
 }
@@ -1172,7 +1172,7 @@ height:56vh;
 .featured-project-overlay h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #F0BC11;
+    color: #10C0E0;
     font-weight: 400;
 }
 
@@ -1469,7 +1469,7 @@ textarea {
 /*.ft_social a:nth-child(4):hover,*/
 /*.head_social .instagram:hover,*/
 /*.ft_social .instagram:hover {*/
-/*    background: linear-gradient(45deg, #c32e2d 0%, #8f1f1e 100%);*/
+/*    background: linear-gradient(45deg, #10C0E0 0%, #0B8FAD 100%);*/
 /*    color: #fff;*/
 /*}*/
 
@@ -1477,7 +1477,7 @@ textarea {
 .ft_social a:nth-child(4):hover .tooltip,
 .head_social .instagram:hover .tooltip,
 .ft_social .instagram:hover .tooltip {
-    background: linear-gradient(45deg, #c32e2d 0%, #8f1f1e 100%);
+    background: linear-gradient(45deg, #10C0E0 0%, #0B8FAD 100%);
     color: #fff;
 }
 
@@ -1603,7 +1603,7 @@ textarea {
             color: #fff;
         }
 
-        background: linear-gradient(0deg, #c32e2d -0.02%, #8f1f1e 99.98%), #c22523;
+        background: linear-gradient(0deg, #10C0E0 -0.02%, #0B8FAD 99.98%), #0B8FAD;
         transition: all 0.5s ease;
     }
 }
@@ -1960,7 +1960,7 @@ textarea {
     width: fit-content;
     color: #fff;
     border-radius: 5px;
-    background: linear-gradient(0deg, #c32e2d -0.02%, #8f1f1e 99.98%), #c22523;
+    background: linear-gradient(0deg, #10C0E0 -0.02%, #0B8FAD 99.98%), #0B8FAD;
     padding: 15px 20px;
     transition: all 0.3s ease;
     border: none;
@@ -2211,7 +2211,7 @@ textarea {
 
 
  .blog-content a{
-        color:#AE2525;
+        color:#10C0E0;
         font-weight:600;
     }
     .blog-content li{
@@ -2277,7 +2277,7 @@ textarea {
 }
 
 .header_call_btn:hover {
-    background: #AE2525;
+    background: #10C0E0;
     color: #fff;
 }
 
@@ -2331,7 +2331,7 @@ textarea {
 }
 
 .testi_stars {
-    color: #F0BC11;
+    color: #10C0E0;
     font-size: 24px;
     display: flex;
     gap: 2px;
@@ -2368,7 +2368,7 @@ textarea {
 .process-count {
     font-size: 22px!important;
     font-weight: 700;
-    background: linear-gradient(0deg, #c32e2d -0.02%, #8f1f1e 99.98%), #c22523;
+    background: linear-gradient(0deg, #10C0E0 -0.02%, #0B8FAD 99.98%), #0B8FAD;
     color: white;
     padding: 5px;
     border-radius: 99px;
